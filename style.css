@@ -1,0 +1,109 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html p {
+    opacity: 0.7;
+    text-shadow: 1px#000;
+}
+
+html .container {
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 300px;
+    max-width: 25rem;
+    margin: auto;
+    margin-top: 10rem;
+    box-shadow: 0px 0px 3px 3px rgb(8, 5, 5, 0.2);
+    border-radius: 5px 5px;
+}
+
+.card1, .card2, .card3 {
+    padding: 3vmin;
+}
+
+.card1 {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+}
+
+.card2 {
+    border-radius: 0 0 0 5px;
+    background: teal;
+}
+
+.card3 {
+    border-radius: 0 0 5px 0;
+    background: rgb(2, 163, 163);
+}
+
+.card2, .card3 {
+    width: calc(50%);
+    color: white;
+}
+button {
+    box-shadow: 0px 0px 2px 2px rgb(233, 233, 233);
+    margin-top: 3vmin;
+}
+
+button:hover {
+    transition: .1s;
+    box-shadow: 0px 0px 2px 2px rgb(206, 206, 206);
+}
+
+.card1 span {
+    color: rgb(84, 84, 253);
+
+}
+
+.card1 b {
+    color: rgb(219, 255, 91);
+    margin-top: 20rem;
+}
+
+
+@media (max-width: 414px) {
+   
+    html p {
+        font-size: 0.8rem;
+    }
+
+    .container {
+        display: inline-block;
+        min-width: 250px;
+        width: 8rem;
+        margin: calc(18%);
+        margin-top: 20vmin;
+    }
+    
+    .card1, .card2, .card3 {
+        width: 100%;
+    }
+
+    .card2 {
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .card3 {
+        border-radius: 0px 0px 5px 5px;
+    }
+
+
+}  
+
+
+
+@media (max-width: 374px) {
+   
+    .container {
+        width: 8rem;
+        margin: calc(11%);
+    }
+}  
+
